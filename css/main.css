@@ -229,9 +229,10 @@ section.san-francisco {
   width: 100%;
   height: auto;
   margin-top: 100px;
+  z-index:-1;
 }
 .absolute.above {
-  z-index: 2;
+  z-index: -1;
 }
 .absolute h2 {
   font-size: 140px;
@@ -293,23 +294,23 @@ section.san-francisco {
   margin-top: 60px;
 }
 
-
-
-
-
 .date {
   font-family:'qhyts',sans-serif;
   margin-top: 400px;
   font-size: 54px;
   color: #90c2da;
   text-align:center;
-  z-index:99;
+  z-index:999;
 }
 
 .date span {
   font-size:22px;
-  color:#4b4b4d;
+
   font-family: 'Whitney', sans-serif;
+}
+
+.date span a{
+  color:#4b4b4d;
 }
 .temp {
   margin-top: 200px;
@@ -318,9 +319,6 @@ section.san-francisco {
   letter-spacing: -0.07em;
   color: #90c2da;
 }
-
-
-
 
 .text-editor {
   background: #222;
@@ -336,8 +334,6 @@ code {
   border-radius: 0;
   color: #C7c252;
 }
-
-
 
 .md-facebook {
   width: 60px;
@@ -450,9 +446,6 @@ span.white {
 }
 
 
-
-
-
 @-webkit-keyframes stretch /* Safari and Chrome */ {
   0% {
     -webkit-transform: scaleX(0);
@@ -485,11 +478,6 @@ span.white {
 }
 
 
-
-
-
-
-
 /*----------------------------------
   Medium devices: iPad vertical
 ------------------------------------*/
@@ -519,59 +507,3 @@ span.white {
 
 
 }
-
-/* SLIDER */
-
-
-            /**
-             * (optional) define here the style definitions which should be applied on the slider container
-             * e.g. width including further controls like arrows etc.
-             */
-            .slider {}
-
-            .frame {
-                /**
-                 * (optional) wrapper width, specifies width of the slider frame.
-                 */
-                width: 880px;
-
-                position: relative;
-                font-size: 0;
-                line-height: 0;
-                overflow: hidden;
-                white-space: nowrap;
-            }
-
-            .slides {
-                display: inline-block;
-            }
-
-            li {
-                position: relative;
-                display: inline-block;
-
-                /**
-                 * (optional) if the content inside the slide element has a defined size.
-                 */
-                width: 880px;
-            }
-
-            .prev, .next {
-                position: absolute;
-                top: 50%;
-                margin-top: -25px;
-                display: block;
-                cursor: pointer;
-            }
-
-            .next {
-                right: 0;
-            }
-
-            .prev {
-                left: 0;
-            }
-
-            .next svg, .prev svg {
-                width: 25px;
-            }
